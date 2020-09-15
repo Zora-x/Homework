@@ -1,0 +1,26 @@
+import static org.junit.jupiter.api.Assertions.*;
+ class BubbleSortTest{
+  private static int normalSort[] = {2,3,4,11,66};
+  @BeforeEac
+  void setUp() throws Exception{
+  }
+  
+  @Text
+  void testBSort(){
+
+       int a[ ] = {4,3,2,66,11};
+       
+       BubbleSort.BSort(a);
+       
+        assertArrayEquals(normalSort,a);
+}
+ @Test
+ void testBReverseSort(){
+ 
+ int a[] = {66,11,4,3,2};
+ 
+ BubbleSort.BSort(a);
+ 
+ assertArrayEquals(normalSort,a)
+  }
+ }
